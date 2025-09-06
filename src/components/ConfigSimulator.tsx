@@ -498,7 +498,11 @@ const ConfigSimulator: React.FC<ConfigSimulatorProps> = ({ onRequestQuote }) => 
                       </div>
                       <p className="text-gray-300 text-sm">Prix TTC, montage inclus</p>
                     </div>
-                    
+                    {estimation.breakdown && estimation.breakdown.length > 0 && (
+                      <details className="mt-4">
+                        <summary className="text-blue-400 cursor-pointer hover:text-blue-300 text-sm">
+                          Voir le détail du calcul
+                        </summary>
                         <div className="mt-3 space-y-1 text-xs text-gray-400">
                           {estimation.breakdown.map((item, index) => (
                             <div key={index}>{item}</div>
