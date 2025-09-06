@@ -106,7 +106,7 @@ const ConfigSimulator: React.FC<ConfigSimulatorProps> = ({ onRequestQuote }) => 
             { key: 'bureautique', label: 'Bureautique & Navigation', desc: 'Internet, bureautique, multimédia léger' },
             { key: 'gaming', label: 'Gaming & Divertissement', desc: 'Jeux vidéo, streaming, divertissement' },
             { key: 'creation', label: 'Création & Multimédia', desc: 'Montage vidéo, photo, design graphique' },
-            { key: 'professionnel', label: 'Usage Professionnel', desc: 'Développement, CAO, calculs intensifs' },
+            { key: 'professionnel', label: 'Usage Professionnel', desc: 'Développement, Logiciels, calculs intensifs' },
             { key: 'polyvalent', label: 'Usage Polyvalent', desc: 'Un peu de tout, usage mixte' },
             { key: 'surprise', label: 'Equilibre', desc: 'Configuration équilibrée recommandée' }
           ],
@@ -119,7 +119,7 @@ const ConfigSimulator: React.FC<ConfigSimulatorProps> = ({ onRequestQuote }) => 
           title: "Niveau d'exigence",
           subtitle: "Quel niveau de performance souhaitez-vous ?",
           options: [
-            { key: 'basique', label: 'Basique', desc: 'Pour les tâches essentielles' },
+            { key: 'basique', label: 'Utile', desc: 'Pour les tâches essentielles' },
             { key: 'standard', label: 'Standard', desc: 'Bon équilibre qualité/prix' },
             { key: 'confort', label: 'Confort', desc: 'Fluidité et réactivité' },
             { key: 'performance', label: 'Performance', desc: 'Hautes performances' },
@@ -499,11 +499,6 @@ const ConfigSimulator: React.FC<ConfigSimulatorProps> = ({ onRequestQuote }) => 
                       <p className="text-gray-300 text-sm">Prix TTC, montage inclus</p>
                     </div>
                     
-                    {estimation.breakdown && estimation.breakdown.length > 0 && (
-                      <details className="mt-4">
-                        <summary className="text-blue-400 cursor-pointer hover:text-blue-300 text-sm">
-                          Voir le détail du calcul
-                        </summary>
                         <div className="mt-3 space-y-1 text-xs text-gray-400">
                           {estimation.breakdown.map((item, index) => (
                             <div key={index}>{item}</div>
