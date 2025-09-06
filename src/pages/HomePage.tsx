@@ -633,7 +633,7 @@ const HomePage = () => {
                 viewport={{ once: true }}
               >
                 <div className="text-4xl mb-4">🎯</div>
-                <h3 className="text-xl font-bold text-blue-400 mb-3">Experience Personnalisé</h3>
+                <h3 className="text-xl font-bold text-blue-400 mb-3">Experience Personnalisée</h3>
                 <p className="text-gray-300">Étude approfondie de vos usages / contraintes pour une solution parfaitement adaptée</p>
               </motion.div>
 
@@ -645,8 +645,8 @@ const HomePage = () => {
                 viewport={{ once: true }}
               >
                 <div className="text-4xl mb-4">⚡</div>
-                <h3 className="text-xl font-bold text-purple-400 mb-3">Performance optimal</h3>
-                <p className="text-gray-300">Sélection rigoureuse des composants pour un équilibre performance/besoins de l'utilisateur</p>
+                <h3 className="text-xl font-bold text-purple-400 mb-3">Performances optimales</h3>
+                <p className="text-gray-300">Sélection rigoureuse des composants pour un équilibre performance/besoins</p>
               </motion.div>
 
               <motion.div
@@ -989,7 +989,7 @@ const HomePage = () => {
                 viewport={{ once: true }}
               >
                 <div className="text-3xl mb-3">🌐</div>
-                <h3 className="font-bold text-green-400 mb-2">Disponibilitée</h3>
+                <h3 className="font-bold text-green-400 mb-2">Disponibilité</h3>
                 <p className="text-gray-300 text-sm">Support à distance et visioconférence</p>
               </motion.div>
             </div>
@@ -1003,7 +1003,7 @@ const HomePage = () => {
             >
               <h3 className="text-2xl font-bold text-white mb-4">Prêt à assembler la machine de vos Rêves ?</h3>
               <p className="text-gray-300 mb-6">
-                Contactez-nous pour un devis personnalisé et gratuit. Nous étudions votre projet et vous apportons les solutions les plus adaptée à vos besoins ainsi qu'a votre budget.
+                Contactez-nous pour un devis personnalisé et gratuit. Nous étudions votre projet et vous apportons les solutions les plus adaptées à vos besoins ainsi qu'à votre budget.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
