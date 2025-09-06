@@ -884,7 +884,7 @@ const HomePage = () => {
                                   <span className="text-green-400 font-medium text-sm">Prix indicatif</span>
                                 </div>
                                 <p className="text-lg font-bold text-white mb-1">{currentConfig.price}</p>
-                                <p className="text-gray-400 text-xs">Précisez cette éstimation grace à votre Devis pérsonnalisé gratuit !</p>
+                                <p className="text-gray-400 text-xs">Précisez cette éstimation grace à votre devis pérsonnalisé gratuit !</p>
                               </div>
 
                               {/* Cadre Usage recommandé plus fin */}
@@ -1112,7 +1112,7 @@ const HomePage = () => {
                         <h3 className="text-xl font-bold text-green-400">Prix indicatif</h3>
                       </div>
                       <p className="text-2xl font-bold text-white mb-2">{selectedConfigData.price}</p>
-                      <p className="text-gray-300 text-sm">Précisez cette éstimation grace à votre Devis pérsonnalisé gratuit !</p>
+                      <p className="text-gray-300 text-sm">Précisez cette éstimation grace à votre devis pérsonnalisé gratuit !</p>
                     </div>
 
                     <div className="bg-gray-800/50 backdrop-blur-sm border border-gray-600 rounded-xl p-6">
