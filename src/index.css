@@ -1,0 +1,189 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Variables CSS pour les safe areas */
+:root {
+  --safe-area-inset-top: env(safe-area-inset-top, 0);
+  --safe-area-inset-right: env(safe-area-inset-right, 0);
+  --safe-area-inset-bottom: env(safe-area-inset-bottom, 0);
+  --safe-area-inset-left: env(safe-area-inset-left, 0);
+}
+
+/* Reset et base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+  background-color: #000000;
+  color: #ffffff;
+  overflow-x: hidden;
+  
+  /* Support des encoches mobiles */
+  padding-top: env(safe-area-inset-top, 0);
+  padding-bottom: env(safe-area-inset-bottom, 0);
+  padding-left: env(safe-area-inset-left, 0);
+  padding-right: env(safe-area-inset-right, 0);
+}
+
+/* Optimisations mobile pour couverture totale */
+@media (max-width: 768px) {
+  html, body {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #000000;
+    
+    /* Extension pour couvrir les encoches */
+    margin-top: calc(-1 * env(safe-area-inset-top, 0));
+    margin-bottom: calc(-1 * env(safe-area-inset-bottom, 0));
+    margin-left: calc(-1 * env(safe-area-inset-left, 0));
+    margin-right: calc(-1 * env(safe-area-inset-right, 0));
+    
+    /* Padding pour le contenu */
+    padding-top: env(safe-area-inset-top, 0);
+    padding-bottom: env(safe-area-inset-bottom, 0);
+    padding-left: env(safe-area-inset-left, 0);
+    padding-right: env(safe-area-inset-right, 0);
+  }
+  
+  /* Root container pour mobile */
+  #root {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #000000;
+    
+    /* Extension pour couvrir les encoches */
+    margin-top: calc(-1 * env(safe-area-inset-top, 0));
+    margin-bottom: calc(-1 * env(safe-area-inset-bottom, 0));
+    margin-left: calc(-1 * env(safe-area-inset-left, 0));
+    margin-right: calc(-1 * env(safe-area-inset-right, 0));
+  }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #3b82f6, #8b5cf6);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(45deg, #2563eb, #7c3aed);
+}
+
+/* Animations personnalisées */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { 
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+  }
+  50% { 
+    box-shadow: 0 0 40px rgba(59, 130, 246, 0.8);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+/* Optimisations pour les performances */
+.backdrop-blur-sm {
+  backdrop-filter: blur(8px);
+}
+
+.backdrop-blur-md {
+  backdrop-filter: blur(12px);
+}
+
+/* Responsive text sizing */
+@media (max-width: 640px) {
+  .text-responsive-xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  
+  .text-responsive-2xl {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+}
+
+/* Focus states pour l'accessibilité */
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Optimisations pour les formulaires mobiles */
+@media (max-width: 768px) {
+  input, textarea, select {
+    font-size: 16px; /* Évite le zoom automatique sur iOS */
+    padding: 12px;
+    border-radius: 8px;
+  }
+  
+  button {
+    min-height: 44px; /* Taille minimale recommandée pour le touch */
+    padding: 12px 24px;
+  }
+}
+
+/* Styles pour les safe areas sur mobile */
+.mobile-safe-area {
+  padding-top: env(safe-area-inset-top, 0);
+  padding-bottom: env(safe-area-inset-bottom, 0);
+  padding-left: env(safe-area-inset-left, 0);
+  padding-right: env(safe-area-inset-right, 0);
+}
+
+/* Background extension pour mobile */
+.mobile-bg-extension {
+  margin-top: calc(-1 * env(safe-area-inset-top, 0));
+  margin-bottom: calc(-1 * env(safe-area-inset-bottom, 0));
+  margin-left: calc(-1 * env(safe-area-inset-left, 0));
+  margin-right: calc(-1 * env(safe-area-inset-right, 0));
+}
+
+/* Viewport fixes pour mobile */
+@supports (height: 100dvh) {
+  @media (max-width: 768px) {
+    html, body, #root {
+      min-height: 100dvh;
+    }
+  }
+}
+
+/* Fallback pour anciens navigateurs */
+@supports not (height: 100dvh) {
+  @media (max-width: 768px) {
+    html, body, #root {
+      min-height: 100vh;
+    }
+  }
+}
