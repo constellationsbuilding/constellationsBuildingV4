@@ -5,12 +5,12 @@ import {ChevronLeft, ChevronRight, X, Cpu, HardDrive, MemoryStick, Zap, Monitor,
 import SolarSystem from '../components/SolarSystem'
 import ContactPage from './ContactPage'
 import ConfigSimulator from '../components/ConfigSimulator'
-const image2 = new URL('../../../Images/2.webp', import.meta.url).href
-const image3 = new URL('../../../Images/3.webp', import.meta.url).href
-const image4 = new URL('../../../Images/4.webp', import.meta.url).href
-const image5 = new URL('../../../Images/5.webp', import.meta.url).href
-const image6 = new URL('../../../Images/6.webp', import.meta.url).href
-const image7 = new URL('../../../Images/7.webp', import.meta.url).href
+import image2 from '../Images/2.webp'
+import image3 from '../Images/3.webp'
+import image4 from '../Images/4.webp'
+import image5 from '../Images/5.webp'
+import image6 from '../Images/6.webp'
+import image7 from '../Images/7.webp'
 
 const HomePage = () => {
   const [currentSection, setCurrentSection] = useState('accueil')
