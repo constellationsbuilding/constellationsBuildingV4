@@ -108,7 +108,7 @@ const ConfigSimulator: React.FC<ConfigSimulatorProps> = ({ onRequestQuote }) => 
             { key: 'creation', label: 'Création & Multimédia', desc: 'Montage vidéo, photo, design graphique' },
             { key: 'professionnel', label: 'Usage Professionnel', desc: 'Développement, CAO, calculs intensifs' },
             { key: 'polyvalent', label: 'Usage Polyvalent', desc: 'Un peu de tout, usage mixte' },
-            { key: 'surprise', label: 'Surprise-moi !', desc: 'Configuration équilibrée recommandée' }
+            { key: 'surprise', label: 'Equilibre', desc: 'Configuration équilibrée recommandée' }
           ],
           category: 'usage',
           multiSelect: false
