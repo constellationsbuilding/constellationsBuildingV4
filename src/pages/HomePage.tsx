@@ -857,7 +857,7 @@ const HomePage = () => {
                             {/* Image à gauche dans un cadre plus petit et fin */}
                             <div className="flex items-center justify-center">
                               <div className="relative bg-gray-800/30 backdrop-blur-sm border border-gray-600/50 rounded-lg p-2 shadow-lg transition-all duration-300">
-                                <div className="relative h-32 w-full rounded-md overflow-hidden">
+                                <div className="relative w-full rounded-md overflow-hidden">
                                   <img 
                                     src={currentConfig.image}
                                     alt={currentConfig.title}
