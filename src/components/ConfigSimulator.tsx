@@ -496,7 +496,7 @@ const ConfigSimulator: React.FC<ConfigSimulatorProps> = ({ onRequestQuote }) => 
                       <div className="text-3xl font-bold text-white mb-2">
                         {estimation.minFinal}€ - {estimation.maxFinal}€
                       </div>
-                      <p className="text-gray-300 text-sm">Prix TTC, montage inclus</p>
+                      <p className="text-gray-300 text-sm">Précisez cette éstimation grace a votre Devis pérsonnalisé !</p>
                     </div>
                   </div>
 
