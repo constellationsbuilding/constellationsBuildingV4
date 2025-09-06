@@ -24,7 +24,7 @@ const HomePage = () => {
     {
       id: 'low',
       title: 'Orion',
-      image: 'image2',
+      image: image2,
       specs: {
         cpu: 'Multi-core basse consommation',
         gpu: 'Intégrée (usage non-gaming)',
