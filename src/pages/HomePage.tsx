@@ -24,7 +24,7 @@ const HomePage = () => {
     {
       id: 'low',
       title: 'Orion',
-      image: 'image2',
+      image: image2,
       specs: {
         cpu: 'Multi-core basse consommation',
         gpu: 'Intégrée (usage non-gaming)',
@@ -41,7 +41,7 @@ const HomePage = () => {
     {
       id: 'high',
       title: 'Cassiopée',
-      image: 'image3',
+      image: image3,
       specs: {
         cpu: 'Processeur AMD Ryzen de dernière génération',
         gpu: 'RTX Séries 80/90 (performances/confort)',
@@ -58,7 +58,7 @@ const HomePage = () => {
     {
       id: 'pro',
       title: 'Andromède',
-      image: 'image4',
+      image: image4,
       specs: {
         cpu: 'Multi-core performant, cache vidéo',
         gpu: 'Carte vidéo sur mesures',
@@ -75,7 +75,7 @@ const HomePage = () => {
     {
       id: 'lowtech-pro',
       title: 'Scorpion',
-      image: 'image5',
+      image: image5,
       specs: {
         cpu: 'Basse consomation, Hautes performances',
         gpu: 'Selon les besoins',
@@ -92,7 +92,7 @@ const HomePage = () => {
     {
       id: 'gaming-elite',
       title: 'Grande Ourse',
-      image: 'image6',
+      image: image6,
       specs: {
         cpu: 'De dernière génération, premium',
         gpu: 'Carte vidéo 4K 120FPS sur les AAA',
@@ -109,7 +109,7 @@ const HomePage = () => {
     {
       id: 'workstation',
       title: 'Lyre',
-      image: 'image7',
+      image: image7,
       specs: {
         cpu: 'PRO Ultra-cadencé',
         gpu: 'Qualité Cinéma',
