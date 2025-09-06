@@ -1102,7 +1102,7 @@ const HomePage = () => {
                       <img 
                         src={selectedConfigData.image}
                         alt={selectedConfigData.title}
-                        className="w-full h-64 object-cover"
+                        className="w-full object-cover"
                       />
                     </div>
                     
