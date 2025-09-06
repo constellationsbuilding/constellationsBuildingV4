@@ -492,24 +492,12 @@ const ConfigSimulator: React.FC<ConfigSimulatorProps> = ({ onRequestQuote }) => 
                   <h5 className="font-semibold text-purple-400 mb-4">Estimation de prix :</h5>
                   
                   <div className="bg-gradient-to-br from-blue-600/20 to-purple-600/20 border border-blue-500/30 rounded-xl p-6 mb-6">
-                    <div className="text-center mb-4">
+                    <div className="text-center">
                       <div className="text-3xl font-bold text-white mb-2">
                         {estimation.minFinal}€ - {estimation.maxFinal}€
                       </div>
                       <p className="text-gray-300 text-sm">Prix TTC, montage inclus</p>
                     </div>
-                    {estimation.breakdown && estimation.breakdown.length > 0 && (
-                      <details className="mt-4">
-                        <summary className="text-blue-400 cursor-pointer hover:text-blue-300 text-sm">
-                          Voir le détail du calcul
-                        </summary>
-                        <div className="mt-3 space-y-1 text-xs text-gray-400">
-                          {estimation.breakdown.map((item, index) => (
-                            <div key={index}>{item}</div>
-                          ))}
-                        </div>
-                      </details>
-                    )}
                   </div>
 
                   {/* Actions */}
