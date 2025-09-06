@@ -5,6 +5,12 @@ import {ChevronLeft, ChevronRight, X, Cpu, HardDrive, MemoryStick, Zap, Monitor,
 import SolarSystem from '../components/SolarSystem'
 import ContactPage from './ContactPage'
 import ConfigSimulator from '../components/ConfigSimulator'
+import image2 from '../../../Images/2.webp'
+import image3 from '../../../Images/3.webp'
+import image4 from '../../../Images/4.webp'
+import image5 from '../../../Images/5.webp'
+import image6 from '../../../Images/6.webp'
+import image7 from '../../../Images/7.webp'
 
 const HomePage = () => {
   const [currentSection, setCurrentSection] = useState('accueil')
@@ -18,7 +24,7 @@ const HomePage = () => {
     {
       id: 'low',
       title: 'Orion',
-      image: 'https://images.pexels.com/photos/21067/pexels-photo.jpg',
+      image: 'image2',
       specs: {
         cpu: 'Multi-core basse consommation',
         gpu: 'Intégrée (usage non-gaming)',
@@ -35,7 +41,7 @@ const HomePage = () => {
     {
       id: 'high',
       title: 'Cassiopée',
-      image: 'https://images.pexels.com/photos/325229/pexels-photo-325229.jpeg',
+      image: 'image3',
       specs: {
         cpu: 'Processeur AMD Ryzen de dernière génération',
         gpu: 'RTX Séries 80/90 (performances/confort)',
@@ -52,7 +58,7 @@ const HomePage = () => {
     {
       id: 'pro',
       title: 'Andromède',
-      image: 'https://images.pexels.com/photos/2582937/pexels-photo-2582937.jpeg',
+      image: 'image4',
       specs: {
         cpu: 'Multi-core performant, cache vidéo',
         gpu: 'Carte vidéo sur mesures',
@@ -69,7 +75,7 @@ const HomePage = () => {
     {
       id: 'lowtech-pro',
       title: 'Scorpion',
-      image: 'https://images.pexels.com/photos/4158/apple-iphone-smartphone-desk.jpg',
+      image: 'image5',
       specs: {
         cpu: 'Basse consomation, Hautes performances',
         gpu: 'Selon les besoins',
@@ -86,7 +92,7 @@ const HomePage = () => {
     {
       id: 'gaming-elite',
       title: 'Grande Ourse',
-      image: 'https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg',
+      image: 'image6',
       specs: {
         cpu: 'De dernière génération, premium',
         gpu: 'Carte vidéo 4K 120FPS sur les AAA',
@@ -103,7 +109,7 @@ const HomePage = () => {
     {
       id: 'workstation',
       title: 'Lyre',
-      image: 'https://images.pexels.com/photos/574077/pexels-photo-574077.jpeg',
+      image: 'image7',
       specs: {
         cpu: 'PRO Ultra-cadencé',
         gpu: 'Qualité Cinéma',
